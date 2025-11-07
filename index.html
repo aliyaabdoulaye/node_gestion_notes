@@ -3,71 +3,113 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Page HTML simple</title>
+  <title>Aliya Abdoulaye – Étudiante en Génie Logiciel</title>
 
-  <!-- Styles simples -->
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      max-width: 900px;
       margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
+      padding: 0 20px;
     }
-    header { text-align: center; margin-bottom: 24px; }
-    nav a { margin: 0 8px; text-decoration: none; color: #1a73e8; }
-    .card {
-      border: 1px solid #ddd;
-      padding: 12px;
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      color: #1a73e8;
+    }
+
+    section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #1a73e8;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
       border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      margin: 8px;
+      transition: background 0.3s ease;
     }
-    button { padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+
+    .btn:hover {
+      background-color: #1EBE57;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #777;
+    }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <h1>Bienvenue — page HTML simple</h1>
-    <p>Un petit exemple pour démarrer.</p>
-    <nav>
-      <a href="#apropos">À propos</a>
-      <a href="#liste">Liste</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>👩🏽‍💻 Aliya Abdoulaye</h1>
+    <p>Étudiante en 3<sup>e</sup> année de Génie Logiciel</p>
   </header>
 
-  <main>
-    <section id="apropos" class="card" style="margin-bottom:16px;">
-      <h2>À propos</h2>
-      <p>Voici un paragraphe de démonstration. Tu peux modifier ce texte comme tu veux.</p>
-    </section>
+  <section>
+    <h2>À propos de moi</h2>
+    <p>
+      Je suis passionnée par le développement logiciel et les nouvelles technologies.
+      En tant qu’étudiante en <strong>troisième année de Génie Logiciel</strong>,
+      je m’intéresse particulièrement à la conception d’applications web, à la gestion de projets,
+      et à l’amélioration continue des compétences techniques et créatives.
+    </p>
+  </section>
 
-    <section id="liste" style="margin-bottom:16px;">
-      <h2>Une liste</h2>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Mes compétences techniques</h2>
+    <ul>
+      <li><strong>Python</strong> – maîtrise du langage, avec frameworks tels que :
+        <ul>
+          <li>Django (développement d’applications web complètes)</li>
+          <li>Flask (API et microservices)</li>
+        </ul>
+      </li>
+      <li><strong>Java</strong> – programmation orientée objet et gestion de bases de données avec PostgreSQL/MySQL</li>
+      <li><strong>JavaScript</strong> – bases du développement front-end (HTML, CSS, DOM, événements)</li>
+      <li><strong>PHP / Laravel</strong> – création de systèmes complets avec authentification et gestion de rôles</li>
+      <li><strong>SQL</strong> – modélisation et requêtes sur bases de données relationnelles</li>
+      <li><strong>Git & GitHub</strong> – gestion de versions et travail collaboratif</li>
+    </ul>
+  </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Exemple de bouton qui affiche une alerte :</p>
-      <button id="helloBtn">Clique-moi</button>
-    </section>
-  </main>
+  <section class="contact">
+    <h2>📞 Me contacter</h2>
+    <p>Si vous souhaitez échanger, collaborer ou en savoir plus sur mes projets :</p>
+    <a class="btn" href="https://wa.me/22993341690" target="_blank">💬 Me contacter sur WhatsApp</a>
+    <a class="btn" href="tel:+22993341690">📱 Appeler le +229 93 34 16 90</a>
+  </section>
 
-  <footer style="text-align:center; margin-top:24px; color:#666;">
-    © 2025 — Exemple simple
+  <footer>
+    © 2025 — Page personnelle de <strong>Aliya Abdoulaye</strong>
   </footer>
-
-  <!-- Petit script JS -->
-  <script>
-    document.getElementById('helloBtn').addEventListener('click', function () {
-      alert('Bonjour ! Ceci est un exemple simple en HTML + JS.');
-    });
-  </script>
 </body>
 </html>
