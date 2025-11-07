@@ -2,16 +2,19 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aliya Abdoulaye – Étudiante en Génie Logiciel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aliya Abdoulaye – Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
+    /* --- General styles --- */
     body {
-      font-family: "Poppins", Arial, sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2c2c44);
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #eee;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -21,26 +24,26 @@
     header {
       text-align: center;
       margin-top: 40px;
-      animation: fadeIn 1.2s ease;
+      animation: fadeIn 1s ease;
     }
 
     h1 {
-      color: #1a73e8;
+      color: #00bcd4;
       margin-bottom: 5px;
     }
 
     p.subtitle {
       font-size: 1.1em;
-      color: #555;
+      color: #ccc;
     }
 
     .profile-pic {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #1a73e8;
-      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      border: 4px solid #00bcd4;
+      box-shadow: 0 0 15px rgba(0,188,212,0.5);
       margin-bottom: 15px;
       transition: transform 0.3s ease;
     }
@@ -51,27 +54,45 @@
 
     main {
       width: 90%;
-      max-width: 800px;
+      max-width: 900px;
       margin-top: 20px;
-      animation: slideUp 1.5s ease;
+      animation: slideUp 1.2s ease;
     }
 
     section {
-      background: #fff;
+      background: #2e2e44;
       padding: 20px;
-      border-radius: 12px;
+      border-radius: 15px;
       margin-bottom: 20px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
 
     h2 {
-      color: #1a73e8;
-      margin-bottom: 10px;
+      color: #00bcd4;
+      margin-bottom: 12px;
     }
 
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    ul.skills {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    ul.skills li {
+      background: #1e1e2f;
+      padding: 10px 15px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    ul.skills li:hover {
+      transform: translateY(-3px);
     }
 
     .contact {
@@ -80,10 +101,10 @@
 
     .btn {
       display: inline-block;
-      padding: 12px 20px;
+      padding: 12px 22px;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       margin: 8px;
       font-weight: bold;
       transition: all 0.3s ease;
@@ -92,8 +113,8 @@
     .whatsapp { background-color: #25D366; }
     .whatsapp:hover { background-color: #1EBE57; transform: translateY(-3px); }
 
-    .phone { background-color: #1a73e8; }
-    .phone:hover { background-color: #155ab6; transform: translateY(-3px); }
+    .phone { background-color: #00bcd4; }
+    .phone:hover { background-color: #0097a7; transform: translateY(-3px); }
 
     .cv { background-color: #ff7043; }
     .cv:hover { background-color: #e64a19; transform: translateY(-3px); }
@@ -101,7 +122,7 @@
     footer {
       text-align: center;
       margin: 30px 0 20px 0;
-      color: #777;
+      color: #aaa;
       font-size: 0.9em;
     }
 
@@ -114,14 +135,16 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    a { color: inherit; }
   </style>
 </head>
 
 <body>
 
   <header>
-    <!-- Remplace cette image par ta vraie photo -->
-    <img src="https://via.placeholder.com/140" alt="Photo de profil Aliya Abdoulaye" class="profile-pic">
+    <!-- Remplace par ta vraie photo -->
+    <img src="https://via.placeholder.com/150" alt="Photo de profil Aliya Abdoulaye" class="profile-pic">
     <h1>👩🏽‍💻 Aliya Abdoulaye</h1>
     <p class="subtitle">Étudiante en 3<sup>e</sup> année de Génie Logiciel</p>
   </header>
@@ -130,36 +153,33 @@
     <section>
       <h2>À propos de moi</h2>
       <p>
-        Je suis passionnée par le développement logiciel et les nouvelles technologies.
-        Actuellement en <strong>troisième année de Génie Logiciel</strong>, je conçois des applications
-        modernes, performantes et centrées sur l’expérience utilisateur.
-        J’aime apprendre de nouvelles technologies et relever des défis techniques.
+        Passionnée par le développement logiciel et les technologies modernes,
+        je suis en <strong>troisième année de Génie Logiciel</strong>. 
+        Je développe des applications web et mobiles performantes,
+        et j'adore apprendre de nouveaux frameworks et langages.
       </p>
     </section>
 
     <section>
-      <h2>Mes compétences techniques</h2>
-      <ul>
-        <li><strong>Python</strong> – Langage principal avec frameworks :
-          <ul>
-            <li>Django : développement web complet (MVC, ORM, authentification)</li>
-            <li>Flask : création d’API légères et microservices</li>
-          </ul>
-        </li>
-        <li><strong>Java</strong> – Programmation orientée objet et gestion de bases de données</li>
-        <li><strong>JavaScript</strong> – Dynamisation des interfaces (DOM, événements, JSON)</li>
-        <li><strong>PHP / Laravel</strong> – Développement d’applications web robustes</li>
-        <li><strong>SQL</strong> – Requêtes et modélisation de données relationnelles</li>
-        <li><strong>Git & GitHub</strong> – Collaboration et gestion de versions</li>
+      <h2>Mes compétences</h2>
+      <ul class="skills">
+        <li><i class="fab fa-python"></i> Python (Django, Flask)</li>
+        <li><i class="fab fa-js-square"></i> JavaScript (Node.js, Front-end)</li>
+        <li><i class="fab fa-java"></i> Java (Spring Boot, Java EE)</li>
+        <li><i class="fas fa-server"></i> AWS</li>
+        <li><i class="fab fa-php"></i> PHP / Laravel</li>
+        <li><i class="fas fa-database"></i> SQL / Bases de données</li>
+        <li><i class="fas fa-mobile-alt"></i> Flutter (App mobile)</li>
+        <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
       </ul>
     </section>
 
     <section class="contact">
       <h2>📞 Me contacter</h2>
       <p>Vous pouvez me joindre directement :</p>
-      <a class="btn whatsapp" href="https://wa.me/22893341690" target="_blank">💬 WhatsApp</a>
-      <a class="btn phone" href="tel:+22893341690">📱 Appeler</a>
-      <a class="btn cv" href="cv-aliya.pdf" download>📄 Télécharger mon CV</a>
+      <a class="btn whatsapp" href="https://wa.me/22893341690" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a class="btn phone" href="tel:+22893341690"><i class="fas fa-phone"></i> Appeler</a>
+      <a class="btn cv" href="cv-aliya.pdf" download><i class="fas fa-file-pdf"></i> Télécharger mon CV</a>
     </section>
   </main>
 
