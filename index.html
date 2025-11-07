@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Page HTML simple</title>
+
+  <!-- Styles simples -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.6;
+    }
+    header { text-align: center; margin-bottom: 24px; }
+    nav a { margin: 0 8px; text-decoration: none; color: #1a73e8; }
+    .card {
+      border: 1px solid #ddd;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    button { padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenue — page HTML simple</h1>
+    <p>Un petit exemple pour démarrer.</p>
+    <nav>
+      <a href="#apropos">À propos</a>
+      <a href="#liste">Liste</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="apropos" class="card" style="margin-bottom:16px;">
+      <h2>À propos</h2>
+      <p>Voici un paragraphe de démonstration. Tu peux modifier ce texte comme tu veux.</p>
+    </section>
+
+    <section id="liste" style="margin-bottom:16px;">
+      <h2>Une liste</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Exemple de bouton qui affiche une alerte :</p>
+      <button id="helloBtn">Clique-moi</button>
+    </section>
+  </main>
+
+  <footer style="text-align:center; margin-top:24px; color:#666;">
+    © 2025 — Exemple simple
+  </footer>
+
+  <!-- Petit script JS -->
+  <script>
+    document.getElementById('helloBtn').addEventListener('click', function () {
+      alert('Bonjour ! Ceci est un exemple simple en HTML + JS.');
+    });
+  </script>
+</body>
+</html>
