@@ -6,7 +6,6 @@
   <title>Aliya Abdoulaye – Étudiante en Génie Logiciel</title>
 
   <style>
-    /* --- Style général --- */
     body {
       font-family: "Poppins", Arial, sans-serif;
       background: linear-gradient(135deg, #e0f7fa, #fce4ec);
@@ -35,7 +34,6 @@
       color: #555;
     }
 
-    /* --- Photo de profil --- */
     .profile-pic {
       width: 140px;
       height: 140px;
@@ -51,7 +49,6 @@
       transform: scale(1.05);
     }
 
-    /* --- Sections --- */
     main {
       width: 90%;
       max-width: 800px;
@@ -77,7 +74,6 @@
       padding-left: 20px;
     }
 
-    /* --- Boutons de contact --- */
     .contact {
       text-align: center;
     }
@@ -85,7 +81,6 @@
     .btn {
       display: inline-block;
       padding: 12px 20px;
-      background-color: #25D366;
       color: white;
       text-decoration: none;
       border-radius: 8px;
@@ -94,12 +89,15 @@
       transition: all 0.3s ease;
     }
 
-    .btn:hover {
-      background-color: #1EBE57;
-      transform: translateY(-3px);
-    }
+    .whatsapp { background-color: #25D366; }
+    .whatsapp:hover { background-color: #1EBE57; transform: translateY(-3px); }
 
-    /* --- Pied de page --- */
+    .phone { background-color: #1a73e8; }
+    .phone:hover { background-color: #155ab6; transform: translateY(-3px); }
+
+    .cv { background-color: #ff7043; }
+    .cv:hover { background-color: #e64a19; transform: translateY(-3px); }
+
     footer {
       text-align: center;
       margin: 30px 0 20px 0;
@@ -107,7 +105,6 @@
       font-size: 0.9em;
     }
 
-    /* --- Animations --- */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -123,6 +120,7 @@
 <body>
 
   <header>
+    <!-- Remplace cette image par ta vraie photo -->
     <img src="https://via.placeholder.com/140" alt="Photo de profil Aliya Abdoulaye" class="profile-pic">
     <h1>👩🏽‍💻 Aliya Abdoulaye</h1>
     <p class="subtitle">Étudiante en 3<sup>e</sup> année de Génie Logiciel</p>
@@ -132,7 +130,7 @@
     <section>
       <h2>À propos de moi</h2>
       <p>
-        Je suis une passionnée du développement logiciel et des nouvelles technologies.
+        Je suis passionnée par le développement logiciel et les nouvelles technologies.
         Actuellement en <strong>troisième année de Génie Logiciel</strong>, je conçois des applications
         modernes, performantes et centrées sur l’expérience utilisateur.
         J’aime apprendre de nouvelles technologies et relever des défis techniques.
@@ -148,7 +146,7 @@
             <li>Flask : création d’API légères et microservices</li>
           </ul>
         </li>
-        <li><strong>Java</strong> – Programmation orientée objet et gestion de bases de données (PostgreSQL, MySQL)</li>
+        <li><strong>Java</strong> – Programmation orientée objet et gestion de bases de données</li>
         <li><strong>JavaScript</strong> – Dynamisation des interfaces (DOM, événements, JSON)</li>
         <li><strong>PHP / Laravel</strong> – Développement d’applications web robustes</li>
         <li><strong>SQL</strong> – Requêtes et modélisation de données relationnelles</li>
@@ -158,14 +156,15 @@
 
     <section class="contact">
       <h2>📞 Me contacter</h2>
-      <p>Vous pouvez me joindre directement via WhatsApp ou par téléphone :</p>
-      <a class="btn" href="https://wa.me/22893341690" target="_blank">💬 Me contacter sur WhatsApp</a>
-      <a class="btn" href="tel:+22993341690">📱 Appeler le +2298 93 34 16 90</a>
+      <p>Vous pouvez me joindre directement :</p>
+      <a class="btn whatsapp" href="https://wa.me/22893341690" target="_blank">💬 WhatsApp</a>
+      <a class="btn phone" href="tel:+22893341690">📱 Appeler</a>
+      <a class="btn cv" href="cv-aliya.pdf" download>📄 Télécharger mon CV</a>
     </section>
   </main>
 
   <footer>
-    © 2025 — Page personnelle de <strong>Aliya Abdoulaye</strong>
+    © 2025 — <strong>Aliya Abdoulaye</strong>
   </footer>
 
 </body>
